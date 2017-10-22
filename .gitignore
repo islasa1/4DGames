@@ -42,3 +42,10 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+thirdparty/
+dev.*
+build/Tests
+build/gtest
+build/bin
+build/*.hpp
+build/resources/
