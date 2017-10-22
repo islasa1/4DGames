@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+#ifndef ${1:__${TM_FILEPATH/(?:\/\w+)*\/(\w+)\/(\w+)\.(\w+)/\U$1:/g}_${TM_FILENAME/(\w+)\.(\w+)/\U$1/g}_H__}
+#define $1
+
+$0${SELECTION}
+
+#endif // $1
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>hguard</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+  <scope>source.c</scope>
+  <description>Generic header guards for C / C++</description>
+</snippet>

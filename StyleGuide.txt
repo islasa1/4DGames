@@ -1,0 +1,111 @@
+////////////////////////////////////////////////////////////////////////////////////
+//
+//     _____    ____ _       ____ _        __ _      __ _  __ _  ______ _   ___ _
+//    / /| |]  |  __ \\     / ___ \\      / \ \\    |   \\/   |]|  _____|] / ___|]
+//   / //| |]  | |] \ \\   | |]  \_|]    / //\ \\   | |\ / /| |]| |]___ _ ( ((_ _
+//  / //_| |]_ | |]  ) ))  | |]  __ _   / _____ \\  | |]\_/ | |]|  _____|] \___ \\
+// |_____   _|]| |]_/ //   | |]__/  |] / //    \ \\ | |]    | |]| |]___ _   ___) ))
+//       |_|]  |_____//     \_____/|]]/_//      \_\\|_|]    |_|]|_______|] |____//
+// 
+//
+////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//  File    : StyleGuide.txt
+//  Author  : Anthony Islas
+//  Purpose : The freakin style guide
+//  Group   : None
+//
+//  TODO    : None
+//
+//  License : None
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+
+Style Guide:
+
+Hungarian-style notation for the most part
+
+all primitive types, enums, and structs get notation
+globals, statics, and other scope modifiers are prefix to
+notation followed by _
+suffix will only be used for '_t' which denote typedef, why this 
+isn't used with notation is to let users identify between different 
+typedef vars, like structs and enums
+paramenter naming must also follow style
+
+Notation only applies to outermost definitions / scopes
+
+Note: 
+'_t' which is used for typedefs, does not need to be in variable name 
+since we already know the type when declared
+
+examples:
+
+ui32MyVar
+pui8SomePointer
+pccConstCharPointer
+psPointerToStruct
+cChar
+rvReferenceVectorofString
+
+
+Use whitespace!!! make things line up neatly and NO TABS (2 spaces)
+
+examples:
+  //          Lined up
+  //             | 
+  //             v
+  myFunctionCall ( pui32Var1, vStrings, bTrue );
+  foo            ( ui8NotMuch );
+
+
+
+NO "using namespace"!!!
+Leads to unmaintainable code and hard-to-follow scoping
+Yes, maybe the compiler can figure it out, but can you?
+
+Yes, it will be a pain to write:
+
+  std::map< 
+            std::vector< std::string >, 
+            std::vector< std::vector< std::string >::iterator > >
+
+but if it really becomes terrible, either typedef that if you use it a lot or use auto 
+AS LONG as you actually know the type and use it sparingly
+
+
+Private class members will end with trailing underscore "_" to identify as part 
+of the class object. This removes the need to always type "this->" 
+
+
+
+Have a comments, questions, or concerns?
+email:
+anthony.islas@eraualumni.org
+
+Have complaints or concerns?
+Put them in my complaint box
+_________
+        |
+        |
+        |
+        v
+       ____
+      (____)
+      |    |   (That's a trash can)
+      \____/ 
+
+
+
+List of common notations
+uint32_t            => ui32
+uiX_t *             => puiX     
+std::string         => ss   (use ss for standard string since s is reserved for structs) 
+std::string *       => pss
+std::vector         => v
+std::vector&        => rv  
+typedef enum eX_t   => e
+typedef struct sR_t => s

@@ -1,0 +1,9 @@
+[submodule "modules/graphics"]
+	path = modules/graphics
+	url = https://github.com/KomorebiGames/graphics.git
+[submodule "modules/physics"]
+	path = modules/physics
+	url = https://github.com/KomorebiGames/physics.git
+[submodule "modules/components"]
+	path = modules/components
+	url = https://github.com/KomorebiGames/components.git

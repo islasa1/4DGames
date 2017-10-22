@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+namespace ${1:${TM_FILEPATH/(?:\/\w+)*\/(\w+)\/(\w+)\.(\w+)/?1\L$1:/g}}
+{
+
+$0${SELECTION}
+
+} // namespace $1
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>namespace</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+  <description>Generic namespace creation based on group folder</description>
+</snippet>

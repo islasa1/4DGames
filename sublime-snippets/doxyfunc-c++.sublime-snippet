@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+//**********************************************************************************
+//
+//  ${6:${TM_FILENAME/(\w+)\.(\w+)/\1/g}::${1:Foo}}
+//
+//  \brief ${4:Brief Description}
+// ${5:${2/((?:\W*[\w+\:?\:?\w+&?]+[ \t\n]+)(\w+),?\W*)?((?:\W?[\w+\:?\:?\w+&?]+[ \t\n]+)(\w+),?\W*)?((?:\W?[\w+\:?\:?\w+&?]+[ \t\n]+)(\w+),?\W*)?((?:\W?[\w+\:?\:?\w+&?]+[ \t\n]+)(\w+),?\W*)?/\
+?2(\/\/  \\param $2 )\
+?4(\/\/  \\param $4 )\
+?6(\/\/  \\param $6 )\
+?8(\/\/  \\param $8 )/ }// }
+//  ${8:Description}
+//
+//  \return ${3:none}
+//
+//**********************************************************************************
+${7:void} $6( ${2:int x} )
+{
+  $0
+} // $6
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>doxyfunc</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+</snippet>

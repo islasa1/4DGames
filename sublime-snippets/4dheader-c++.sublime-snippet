@@ -1,0 +1,39 @@
+<snippet>
+  <content><![CDATA[
+////////////////////////////////////////////////////////////////////////////////////
+//
+//     _____    ____ _       ____ _        __ _      __ _  __ _  ______ _   ___ _
+//    / /| |]  |  __ \\\\     / ___ \\\\      / \\ \\\\    |   \\\\/   |]|  _____|] / ___|]
+//   / //| |]  | |] \\ \\\\   | |]  \\_|]    / //\\ \\\\   | |\\ / /| |]| |]___ _ ( ((_ _
+//  / //_| |]_ | |]  ) ))  | |]  __ _   / _____ \\\\  | |]\\_/ | |]|  _____|] \\___ \\\\
+// |_____   _|]| |]_/ //   | |]__/  |] / //    \\ \\\\ | |]    | |]| |]___ _   ___) ))
+//       |_|]  |_____//     \\_____/|]]/_//      \\_\\\\|_|]    |_|]|_______|] |____//
+// 
+//
+////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//  File    : $TM_FILENAME
+//  Author  : ${2:Anthony Islas}
+//  Purpose : ${1:File Description}
+//  Group   : ${3:${TM_FILEPATH/(?:\/\w+)*\/(\w+)\/(\w+)\.(\w+)/?1\u$1:/g}}
+//
+//  TODO    : ${2:None}
+//
+//  License : None
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+namespace ${4:${3/(\w+)/\L$1/g}}
+{
+  
+
+} // namespace $4
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>4dheader</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++</scope>
+  <description>4D Games header for all files in project</description>
+  
+</snippet>
