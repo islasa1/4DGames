@@ -48,3 +48,4 @@ build/gtest
 build/bin
 build/*.hpp
 build/resources/
+_build

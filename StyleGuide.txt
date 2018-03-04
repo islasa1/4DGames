@@ -44,12 +44,12 @@ since we already know the type when declared
 
 examples:
 
-ui32MyVar
-pui8SomePointer
-pccConstCharPointer
-psPointerToStruct
-cChar
-rvReferenceVectorofString
+myVar 
+pSomePointer
+pConstCharPointer
+pPointerToStruct
+char
+rReferenceVectorofString
 
 
 Use whitespace!!! make things line up neatly and NO TABS (2 spaces)
@@ -58,8 +58,8 @@ examples:
   //          Lined up
   //             | 
   //             v
-  myFunctionCall ( pui32Var1, vStrings, bTrue );
-  foo            ( ui8NotMuch );
+  myFunctionCall ( var1, strings, trueVar );
+  foo            ( notMuch );
 
 
 
@@ -101,11 +101,7 @@ _________
 
 
 List of common notations
-uint32_t            => ui32
-uiX_t *             => puiX     
-std::string         => ss   (use ss for standard string since s is reserved for structs) 
-std::string *       => pss
-std::vector         => v
-std::vector&        => rv  
-typedef enum eX_t   => e
-typedef struct sR_t => s
+uint32_t            => var
+X_t *               => pVar   
+std::string *       => pVar
+std::vector&        => rVar 

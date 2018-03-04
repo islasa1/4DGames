@@ -198,6 +198,7 @@ configure_file ( ${PROJECT_SOURCE_DIR}/config.hpp.in
 #
 # Must be last to allow correct setup of regresiion test
 #
+
 add_subdirectory ( gtest )
 message ( "Current Tests: " ) 
 foreach (test_file ${TEST_SOURCES} )
