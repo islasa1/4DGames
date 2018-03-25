@@ -14,19 +14,20 @@
 //
 //
 //  File    : $TM_FILENAME
-//  Author  : ${2:Anthony Islas}
+//  Author  : ${5:Anthony Islas}
 //  Purpose : ${1:File Description}
 //  Group   : ${3:${TM_FILEPATH/(?:\/\w+)*\/(\w+)\/(\w+)\.(\w+)/?1\u$1:/g}}
 //
 //  TODO    : ${2:None}
 //
-//  License : None
+//  License : GNU GPL v3
 //
 ////////////////////////////////////////////////////////////////////////////////////
 
 namespace ${4:${3/(\w+)/\L$1/g}}
 {
   
+$0
 
 } // namespace $4
 ]]></content>

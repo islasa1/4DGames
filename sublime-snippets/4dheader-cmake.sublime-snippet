@@ -14,15 +14,18 @@
 ##
 ##
 ##  File    : $TM_FILENAME
-##  Author  : ${0:Anthony Islas}
+##  Author  : ${3:Anthony Islas}
 ##  Purpose : ${1:File Description}
 ##  Group   : ${TM_FILEPATH/(?:\/\w+)*\/(\w+)\/(\w+)\.(\w+)/?1\u$1:/g}
 ##
 ##  TODO    : ${2:None}
 ##
-##  License : None
+##  License : ${4:GNU GPL v3}
 ##
 ####################################################################################
+
+$0
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>4dheader</tabTrigger>
